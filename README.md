@@ -14,8 +14,8 @@
    Volley--NetworkImageView加载
    使用LruCache缓存
    
+---------------------------------------------网络请求↓----------------------------------------------------
 
-网络请求：
         //Volley--StringRequest_Get请求Demo
         var urlget = "http://xxxxxx?customer_id=74&language_type=1&app_channel=1&amount=0&type=1"
         NetRequestUtils.getInstance(this).StringRequest_Get(urlget, TestGetTokenBean::class.java, object : NetRequestUtils.OnGetResponse<TestGetTokenBean> {
@@ -100,8 +100,8 @@
 
         })
 
+---------------------------------------------图片加载↓----------------------------------------------------
 
-网络图片加载：
             //Volley--imageRequest请求Demo
             NetImgUtils.getInstance(this).imageRequest_method(pathUrl, object : NetImgUtils.OnResponse {
                 override fun onResponse(response: Bitmap?) {
